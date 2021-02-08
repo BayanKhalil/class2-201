@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    border: 3px solid rgb(212, 6, 178);
+    background-color: grey;
+} 
+
+main{
+    background-color: hotpink;
+}
+h3 {
+    margin: 10px;
+    font-family: cursive;
+}
