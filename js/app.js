@@ -1,5 +1,7 @@
 'use strict'
 
+let score = 0;
+
 let userName = prompt('what is your name');
 alert('welcome ' + userName + ' lets play agussing game');
 
@@ -19,6 +21,7 @@ switch (head.toLowerCase()) {
     case 'y':
         // console.log('that\'s correct');
         alert('that\'s correct');
+        score++;
         break;
     case 'no':
     case 'n':
@@ -37,6 +40,7 @@ switch (senses.toLowerCase()) {
     case 'y':
         // console.log('that\'s correct');
         alert('that\'s correct');
+        score++;
         break;
     case 'no':
     case 'n':
@@ -55,6 +59,7 @@ switch (eyes.toLowerCase()) {
     case 'n':
         // console.log('that\'s correct');
         alert('that\'s correct');
+        score++;
         break;
     case 'yes':
     case 'y':
@@ -72,6 +77,7 @@ switch (listening.toLowerCase()) {
     case 'n':
         // console.log('that\'s correct');
         alert('that\'s correct');
+        score++;
         break;
     case 'yes':
     case 'y':
@@ -89,6 +95,7 @@ switch (hand.toLowerCase()) {
     case 'y':
         // console.log('that\'s correct');
         alert('that\'s correct');
+        score++;
         break;
     case 'no':
     case 'n':
@@ -98,6 +105,101 @@ switch (hand.toLowerCase()) {
         break;
 }
 alert('thank you for playing ' + userName);
+
+
+
+
+
+for (var i = 0; i < 4; i++) {
+    
+    let number = prompt('what is the number of this question?', 'enter here');
+
+    if (number == 6) {
+        alert('Good!');
+        score++;
+        break;
+
+    } else if (number > 6) {
+        alert('it\s too high');
+
+    }else if(number<6){
+        alert ('it\s too low');
+    }
+    else{alert('please input a number');}
+}
+
+    // if (number> 6){
+    //    alert ('it\s too high');
+    //    let input2 = alert("Guess the number in 4 tries");
+    // for (var i = 0; i < 4; i++) {
+    //     if (input2 == 6) {
+    //       alert('Good!');
+    //       score++;
+    //     } else {
+    //       input2 = prompt("Wrong, enter again!")
+    //     }
+    //   }
+
+    // }else if(number<6){
+    //    alert ('it\s too low');
+    //    let input2 = alert("Guess the number in 4 tries");
+    // for (var i = 0; i < 4; i++) {
+    //     if (input2 == 6) {
+    //       alert('Good!');
+    //       score++;
+    //     } else {
+    //       input2 = prompt("Wrong, enter again!")
+    //     }
+    //   }
+
+
+    //   alert(' the correct answer is 6');}
+
+
+
+    let place = ['amazon forests', 'trebzon', 'australia farms', 'alquds', 'cyprus', 'yafa']
+    let input3 = alert("Guess the place that i love to visit in 6 tries ")
+    let correctAnswer = false;
+
+    for (let i = 0; i < 6; i++) {
+        let input3 = prompt('what my favorite place'+place);
+
+        for (let ins = 0; ins <= place.length; ins++) {
+            // console.log(ins);
+             console.log(place[ins]);
+            
+            if (input3 === place[ins]) {
+                alert('correct');
+
+                correctAnswer = true;
+                score++;
+                break;
+
+            }
+
+
+        }
+        if (correctAnswer == true) {
+            // console.log(corectAnswer);
+            break;
+        }
+        console.log(correctAnswer);
+
+
+
+
+
+
+
+
+    }
+    alert('your score is ' + score);
+
+
+
+
+
+
 
 
 
