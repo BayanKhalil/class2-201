@@ -77,7 +77,7 @@ switch (eyes.toLowerCase()) {
 }
 thirdQuestion();
 
-
+function forthQuestion(){
 let listening = prompt('we listening by mouth?');
 
 switch (listening.toLowerCase()) {
@@ -95,7 +95,10 @@ switch (listening.toLowerCase()) {
         break;
 
 }
+}
+forthQuestion();
 
+function fifthQuestion(){
 let hand = prompt('you have tow hand?');
 
 switch (hand.toLowerCase()) {
@@ -114,10 +117,11 @@ switch (hand.toLowerCase()) {
 }
 alert('thank you for playing ' + userName);
 
+}
+fifthQuestion();
 
 
-
-
+function sixthQuestion(){
 for (var i = 0; i < 4; i++) {
     
     let number = prompt('what is the number of this question?', 'enter here');
@@ -137,7 +141,8 @@ for (var i = 0; i < 4; i++) {
 
 }
 alert(' the correct answer is 6');
-
+}
+sixthQuestion();
 
     // if (number> 6){
     //    alert ('it\s too high');
@@ -167,7 +172,7 @@ alert(' the correct answer is 6');
     //   alert(' the correct answer is 6');}
 
 
-
+function seventhQueston(){
     let place = ['amazon forests', 'trebzon', 'australia farms', 'alquds', 'cyprus', 'yafa']
     let input3 = alert("Guess the place that i love to visit in 6 tries ")
     let correctAnswer = false;
@@ -205,7 +210,8 @@ alert(' the correct answer is 6');
 
     }
     alert('your score is ' + score);
-
+}
+seventhQueston();
 
 
 
