@@ -14,6 +14,7 @@ alert('welcome ' + userName + ' lets play agussing game');
 4- we listening by mouth
 5- you have tow hand   
  */
+function firstQuestion(){
 let head = prompt('do we have one head');
 
 switch (head.toLowerCase()) {
@@ -31,8 +32,10 @@ switch (head.toLowerCase()) {
         break;
 
 }
+}
+firstQuestion();
 
-
+function secondQuestion(){
 let senses = prompt('we have 4 senses in the head?');
 
 switch (senses.toLowerCase()) {
@@ -50,8 +53,10 @@ switch (senses.toLowerCase()) {
         break;
 
 }
+}
+secondQuestion();
 
-
+function thirdQuestion(){
 let eyes = prompt('do we have one eyes?');
 
 switch (eyes.toLowerCase()) {
@@ -69,6 +74,9 @@ switch (eyes.toLowerCase()) {
         break;
 
 }
+}
+thirdQuestion();
+
 
 let listening = prompt('we listening by mouth?');
 
