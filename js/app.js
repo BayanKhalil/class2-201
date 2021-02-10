@@ -127,8 +127,9 @@ for (var i = 0; i < 4; i++) {
     }
     else{alert('please input a number');}
 
-    alert(' the correct answer is 6');
 }
+alert(' the correct answer is 6');
+
 
     // if (number> 6){
     //    alert ('it\s too high');
