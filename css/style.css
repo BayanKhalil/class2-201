@@ -1,11 +1,44 @@
+
 h1 {
+    font-family: 'Stalinist One';
+    position:sticky; 
     text-align: center;
-    font-family: sans-serif;
     border: 3px solid rgb(212, 6, 178);
     background-color: grey;
 } 
+header nav ul li {
+    list-style: non;
+    display: inline block;
+}
+#home{
+    width: 120px;
+    height: 150px;
+    
+
+}
+.list{
+    width: 500px;
+    height: 200px;
+    margin-left: 100px;
+}
+.loading{
+    width: 500px;
+    height: 200px;
+    /* margin-left: 300px; */
+    
+}
+.animation{
+     width: 500px; 
+    height: 500px;
+    float: right;
+    position: sticky;
+    
+}
+
+
 
 main{
+    position: sticky;
     background-color: hotpink;
 }
 h3 {
